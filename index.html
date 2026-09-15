@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PrimeVideo.com/mytv – TV Activation & Setup Guide</title>
+
+<meta name="description"
+content="Learn how to use PrimeVideo.com/mytv for TV setup and activation. Follow simple Prime Video activation steps, device tips, troubleshooting and FAQs.">
+
+<meta name="keywords"
+content="PrimeVideo.com/mytv, Prime Video mytv, Prime Video activation, Prime Video TV setup, Prime Video activation code">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#080719;
+  color:#f7f5ff;
+  line-height:1.7;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(8,7,25,.88);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+  max-width:1180px;
+  margin:auto;
+  padding:18px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:23px;
+  font-weight:800;
+}
+
+.logo span{
+  color:#8b7cff;
+}
+
+nav{
+  display:flex;
+  gap:28px;
+}
+
+nav a{
+  color:#b8b5ca;
+  font-size:14px;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#a89cff;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  min-height:650px;
+  display:flex;
+  align-items:center;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:#593cff;
+  filter:blur(150px);
+  opacity:.22;
+  top:-220px;
+  left:-150px;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:#00b7ff;
+  filter:blur(150px);
+  opacity:.15;
+  right:-150px;
+  bottom:-200px;
+}
+
+.hero-inner{
+  width:1180px;
+  max-width:100%;
+  margin:auto;
+  padding:90px 24px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
+
+.eyebrow{
+  display:inline-block;
+  padding:7px 15px;
+  border-radius:30px;
+  border:1px solid rgba(170,155,255,.3);
+  background:rgba(130,110,255,.08);
+  color:#b8adff;
+  font-size:13px;
+  margin-bottom:22px;
+}
+
+.hero h1{
+  font-size:58px;
+  line-height:1.05;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero h1 span{
+  display:block;
+  background:linear-gradient(90deg,#a995ff,#55cfff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero-text{
+  color:#aaa7bb;
+  max-width:600px;
+  font-size:17px;
+}
+
+.buttons{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:32px;
+}
+
+.btn-primary{
+  padding:14px 25px;
+  border-radius:9px;
+  background:linear-gradient(90deg,#7561ff,#4c9dff);
+  color:white;
+  font-weight:800;
+  box-shadow:0 12px 30px rgba(92,76,255,.25);
+  transition:.3s;
+}
+
+.btn-primary:hover{
+  transform:translateY(-3px);
+}
+
+.btn-secondary{
+  padding:13px 23px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:9px;
+  color:#ddd9ec;
+}
+
+.btn-secondary:hover{
+  border-color:#8877ff;
+  color:#a89cff;
+}
+
+/* CINEMA CARD */
+
+.cinema{
+  position:relative;
+}
+
+.screen{
+  position:relative;
+  min-height:380px;
+  border-radius:22px;
+  padding:35px;
+
+  background:
+    radial-gradient(circle at 20% 20%,rgba(131,109,255,.35),transparent 30%),
+    radial-gradient(circle at 80% 80%,rgba(0,190,255,.22),transparent 30%),
+    linear-gradient(145deg,#191735,#0c0b1e);
+
+  border:1px solid rgba(255,255,255,.13);
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  overflow:hidden;
+}
+
+.screen::before{
+  content:"";
+  position:absolute;
+  width:250px;
+  height:250px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  top:-100px;
+  right:-60px;
+}
+
+.screen-label{
+  color:#9691ac;
+  font-size:11px;
+  letter-spacing:2px;
+  position:relative;
+}
+
+.screen h2{
+  font-size:31px;
+  margin:10px 0;
+  position:relative;
+}
+
+.screen p{
+  color:#aaa6b9;
+  font-size:14px;
+  position:relative;
+}
+
+.code-box{
+  margin-top:22px;
+  padding:16px;
+  border-radius:10px;
+  background:rgba(255,255,255,.93);
+  color:#171426;
+  text-align:center;
+  font-size:23px;
+  font-weight:900;
+  letter-spacing:4px;
+  position:relative;
+}
+
+/* GENERAL */
+
+.container{
+  max-width:1180px;
+  margin:auto;
+  padding:85px 24px;
+}
+
+.heading{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 48px;
+}
+
+.heading h2{
+  font-size:38px;
+  line-height:1.2;
+  margin-bottom:12px;
+}
+
+.heading p{
+  color:#9693a8;
+}
+
+/* QUICK ANSWER */
+
+.quick{
+  max-width:900px;
+  margin:0 auto 80px;
+  padding:30px;
+
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.quick h2{
+  margin-bottom:10px;
+  color:#b5aaff;
+}
+
+.quick p{
+  color:#aaa7b8;
+}
+
+/* TIMELINE */
+
+.timeline{
+  max-width:850px;
+  margin:auto;
+  position:relative;
+}
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:27px;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:linear-gradient(#7561ff,rgba(117,97,255,0));
+}
+
+.timeline-item{
+  display:flex;
+  gap:25px;
+  margin-bottom:30px;
+  position:relative;
+}
+
+.number{
+  min-width:55px;
+  height:55px;
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#17132f;
+  border:1px solid #7160e9;
+  color:#afa3ff;
+  font-weight:900;
+
+  position:relative;
+  z-index:2;
+}
+
+.timeline-content{
+  flex:1;
+  padding:23px;
+  border-radius:14px;
+
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.09);
+}
+
+.timeline-content h3{
+  margin-bottom:7px;
+}
+
+.timeline-content p{
+  color:#9996a9;
+  font-size:14px;
+}
+
+/* DEVICES */
+
+.devices-section{
+  background:
+    linear-gradient(180deg,#0c0b21,#080719);
+}
+
+.devices{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.device{
+  padding:30px 20px;
+  text-align:center;
+
+  background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;
+
+  transition:.3s;
+}
+
+.device:hover{
+  transform:translateY(-7px);
+  border-color:#7565e7;
+}
+
+.icon{
+  width:62px;
+  height:62px;
+  margin:0 auto 15px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:18px;
+  background:rgba(117,97,255,.12);
+
+  font-size:29px;
+}
+
+.device h3{
+  margin-bottom:7px;
+}
+
+.device p{
+  color:#9390a3;
+  font-size:13px;
+}
+
+/* GLASS INFORMATION */
+
+.glass{
+  max-width:950px;
+  margin:auto;
+
+  padding:35px;
+
+  border-radius:18px;
+
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.1);
+
+  backdrop-filter:blur(15px);
+}
+
+.glass h2{
+  margin-bottom:15px;
+}
+
+.glass p{
+  color:#a29faf;
+  margin-bottom:12px;
+}
+
+.glass strong{
+  color:#b7abff;
+}
+
+/* PROBLEMS */
+
+.problems{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.problem{
+  padding:27px;
+  border-radius:15px;
+
+  background:#11102a;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.problem h3{
+  color:#aaa0ff;
+  margin-bottom:8px;
+}
+
+.problem p{
+  color:#9794a7;
+  font-size:14px;
+}
+
+/* FAQ */
+
+.faq{
+  max-width:900px;
+  margin:auto;
+}
+
+details{
+  margin-bottom:12px;
+
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:12px;
+
+  overflow:hidden;
+}
+
+summary{
+  cursor:pointer;
+  padding:20px;
+  font-weight:700;
+  list-style:none;
+}
+
+summary::-webkit-details-marker{
+  display:none;
+}
+
+summary::after{
+  content:"+";
+  float:right;
+  color:#9f91ff;
+  font-size:21px;
+}
+
+details[open] summary::after{
+  content:"−";
+}
+
+details p{
+  padding:0 20px 20px;
+  color:#9693a7;
+  font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+  max-width:1080px;
+  margin:20px auto 80px;
+  padding:70px 25px;
+  text-align:center;
+
+  border-radius:22px;
+
+  background:
+    radial-gradient(circle at 20% 20%,rgba(116,91,255,.3),transparent 35%),
+    radial-gradient(circle at 80% 80%,rgba(0,190,255,.2),transparent 30%),
+    #11102b;
+
+  border:1px solid rgba(255,255,255,.1);
+}
+
+.cta h2{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.cta p{
+  max-width:680px;
+  margin:0 auto 28px;
+  color:#a19daf;
+}
+
+/* FOOTER */
+
+footer{
+  padding:45px 20px;
+  text-align:center;
+  background:#050510;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.footer-links a{
+  color:#888596;
+  font-size:13px;
+}
+
+.footer-links a:hover{
+  color:#a99dff;
+}
+
+footer p{
+  color:#5f5c6c;
+  font-size:12px;
+  margin-top:7px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .hero-inner{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-text{
+    margin:auto;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .devices{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:620px){
+
+  nav{
+    display:none;
+  }
+
+  .nav{
+    justify-content:center;
+  }
+
+  .hero-inner{
+    padding:65px 18px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero-text{
+    font-size:15px;
+  }
+
+  .container{
+    padding:60px 18px;
+  }
+
+  .heading h2{
+    font-size:30px;
+  }
+
+  .devices,
+  .problems{
+    grid-template-columns:1fr;
+  }
+
+  .timeline-item{
+    gap:15px;
+  }
+
+  .number{
+    min-width:48px;
+    height:48px;
+  }
+
+  .timeline::before{
+    left:24px;
+  }
+
+  .screen{
+    min-height:320px;
+    padding:25px;
+  }
+
+  .cta{
+    margin:10px 18px 60px;
+    padding:55px 20px;
+  }
+
+  .cta h2{
+    font-size:30px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="nav">
+
+    <a href="#" class="logo">
+      Prime Video <span>Guide</span>
+    </a>
+
+    <nav>
+      <a href="#setup">Setup</a>
+      <a href="#devices">Devices</a>
+      <a href="#help">Help</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-inner">
+
+    <div>
+
+      <div class="eyebrow">
+        Prime Video TV Activation Guide
+      </div>
+
+      <h1>
+        PrimeVideo.com/mytv
+        <span>TV Setup Made Simple</span>
+      </h1>
+
+      <p class="hero-text">
+        Need help with PrimeVideo.com/mytv? Learn how to connect
+        Prime Video to a compatible TV or streaming device, find your
+        activation code, and complete the setup process with easy-to-follow
+        instructions.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          href="https://www.primevideo.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary">
+          Visit Prime Video →
+        </a>
+
+        <a
+          href="#setup"
+          class="btn-secondary">
+          View Setup Steps
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- CINEMATIC SCREEN -->
+
+    <div class="cinema">
+
+      <div class="screen">
+
+        <div class="screen-label">
+          PRIME VIDEO ACTIVATION
+        </div>
+
+        <h2>
+          Connect Your Device
+        </h2>
+
+        <p>
+          Follow the instructions shown on your TV screen.
+        </p>
+
+        <div class="code-box">
+          TV-7X92-AB
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- QUICK ANSWER -->
+
+<section class="container">
+
+  <div class="quick">
+
+    <h2>
+      PrimeVideo.com/mytv – Quick Answer
+    </h2>
+
+    <p>
+      PrimeVideo.com/mytv may be used as part of the process for
+      connecting Prime Video with a compatible TV or streaming device.
+      Start by opening the Prime Video application on your device,
+      follow the displayed instructions, and enter the activation
+      information when requested.
+    </p>
+
+  </div>
+
+
+  <!-- SETUP -->
+
+  <div id="setup" class="heading">
+
+    <h2>
+      How to Set Up Prime Video on Your TV
+    </h2>
+
+    <p>
+      Follow these general PrimeVideo.com/mytv activation steps.
+      The exact process may vary depending on your device.
+    </p>
+
+  </div>
+
+
+  <div class="timeline">
+
+
+    <div class="timeline-item">
+
+      <div class="number">
+        01
+      </div>
+
+      <div class="timeline-content">
+
+        <h3>
+          Open Prime Video
+        </h3>
+
+        <p>
+          Turn on your compatible Smart TV or streaming device and
+          open the Prime Video application.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="number">
+        02
+      </div>
+
+      <div class="timeline-content">
+
+        <h3>
+          Find Your Activation Code
+        </h3>
+
+        <p>
+          Follow the on-screen Prime Video instructions and look for
+          the code or linking information displayed on your TV.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="number">
+        03
+      </div>
+
+      <div class="timeline-content">
+
+        <h3>
+          Open the Official Prime Video Website
+        </h3>
+
+        <p>
+          If your device directs you to PrimeVideo.com/mytv, use the
+          official Prime Video website and follow the instructions shown.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <div class="number">
+        04
+      </div>
+
+      <div class="timeline-content">
+
+        <h3>
+          Complete the TV Connection
+        </h3>
+
+        <p>
+          Finish the displayed instructions and return to your TV to
+          check whether Prime Video is ready to use.
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- DEVICES -->
+
+<section id="devices" class="devices-section">
+
+  <div class="container">
+
+    <div class="heading">
+
+      <h2>
+        Prime Video Supported Device Types
+      </h2>
+
+      <p>
+        Prime Video availability and setup methods can vary by device.
+      </p>
+
+    </div>
+
+
+    <div class="devices">
+
+
+      <div class="device">
+
+        <div class="icon">
+          📺
+        </div>
+
+        <h3>
+          Smart TV
+        </h3>
+
+        <p>
+          Open the Prime Video application on a compatible Smart TV
+          and follow the displayed instructions.
+        </p>
+
+      </div>
+
+
+      <div class="device">
+
+        <div class="icon">
+          📡
+        </div>
+
+        <h3>
+          Streaming Device
+        </h3>
+
+        <p>
+          Use the Prime Video application on your supported streaming
+          device and follow the setup instructions.
+        </p>
+
+      </div>
+
+
+      <div class="device">
+
+        <div class="icon">
+          🎮
+        </div>
+
+        <h3>
+          Gaming Console
+        </h3>
+
+        <p>
+          Check whether Prime Video is available on your compatible
+          gaming console.
+        </p>
+
+      </div>
+
+
+      <div class="device">
+
+        <div class="icon">
+          💻
+        </div>
+
+        <h3>
+          Computer
+        </h3>
+
+        <p>
+          Use a supported browser to access Prime Video and manage
+          account or device setup when required.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ACTIVATION INFORMATION -->
+
+<section class="container">
+
+  <div class="heading">
+
+    <h2>
+      What You Need Before Prime Video Setup
+    </h2>
+
+    <p>
+      Prepare these basics before starting the TV activation process.
+    </p>
+
+  </div>
+
+
+  <div class="glass">
+
+    <h2>
+      PrimeVideo.com/mytv Setup Checklist
+    </h2>
+
+    <p>
+      <strong>Compatible device:</strong>
+      Make sure your Smart TV or streaming device supports Prime Video.
+    </p>
+
+    <p>
+      <strong>Internet connection:</strong>
+      Connect your TV or streaming device to a working internet network.
+    </p>
+
+    <p>
+      <strong>Prime Video application:</strong>
+      Open the current Prime Video app available on your device.
+    </p>
+
+    <p>
+      <strong>Activation information:</strong>
+      If Prime Video displays a code or another linking method,
+      keep the information available while completing setup.
+    </p>
+
+    <p>
+      <strong>Account:</strong>
+      Depending on the service and device, you may need to sign in
+      with an eligible Amazon account.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- TROUBLESHOOTING -->
+
+<section id="help" class="container">
+
+  <div class="heading">
+
+    <h2>
+      Prime Video Activation Troubleshooting
+    </h2>
+
+    <p>
+      Try these basic solutions if your Prime Video TV setup is not
+      working as expected.
+    </p>
+
+  </div>
+
+
+  <div class="problems">
+
+
+    <div class="problem">
+
+      <h3>
+        Prime Video Code Not Working
+      </h3>
+
+      <p>
+        Check that the code was entered correctly and that you are
+        using the current code displayed by your TV or device.
+      </p>
+
+    </div>
+
+
+    <div class="problem">
+
+      <h3>
+        Prime Video Not Connecting
+      </h3>
+
+      <p>
+        Check your internet connection and restart the TV or streaming
+        device before trying the setup again.
+      </p>
+
+    </div>
+
+
+    <div class="problem">
+
+      <h3>
+        PrimeVideo.com/mytv Not Loading
+      </h3>
+
+      <p>
+        Check your internet connection and try using an updated browser
+        to access the official Prime Video website.
+      </p>
+
+    </div>
+
+
+    <div class="problem">
+
+      <h3>
+        Prime Video App Has an Error
+      </h3>
+
+      <p>
+        Check whether an application update is available. Restarting
+        your device can also help with temporary problems.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq" class="container">
+
+  <div class="heading">
+
+    <h2>
+      Frequently Asked Questions
+    </h2>
+
+    <p>
+      Common questions about PrimeVideo.com/mytv and TV activation.
+    </p>
+
+  </div>
+
+
+  <div class="faq">
+
+
+    <details>
+
+      <summary>
+        What is PrimeVideo.com/mytv?
+      </summary>
+
+      <p>
+        PrimeVideo.com/mytv is a phrase associated with Prime Video
+        TV or compatible device setup. The exact process can vary
+        depending on the device and current Prime Video instructions.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        How do I activate Prime Video on my TV?
+      </summary>
+
+      <p>
+        Open the Prime Video application on your compatible TV or
+        streaming device and follow the on-screen instructions.
+        If an activation code is displayed, use the method provided
+        by Prime Video to complete the connection.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Where can I find my Prime Video activation code?
+      </summary>
+
+      <p>
+        When required, the activation or linking code is generally
+        displayed inside the Prime Video application on your TV or
+        compatible device.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Why is my PrimeVideo.com/mytv code not working?
+      </summary>
+
+      <p>
+        The code may have expired or may have been entered incorrectly.
+        Check the current code displayed on your device and follow
+        the latest Prime Video instructions.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Can I use my phone to set up Prime Video?
+      </summary>
+
+      <p>
+        Some Prime Video device setup processes can be completed with
+        a phone or computer. Available options depend on the device
+        and the instructions shown during setup.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Why is Prime Video not connecting to my TV?
+      </summary>
+
+      <p>
+        Check your internet connection, restart the device, and make
+        sure the Prime Video application is updated. For device-specific
+        problems, check the official Prime Video help resources.
+      </p>
+
+    </details>
+
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <h2>
+    Ready to Set Up Prime Video?
+  </h2>
+
+  <p>
+    Start with your compatible TV or streaming device, follow the
+    Prime Video instructions, and use official resources for current
+    account and device information.
+  </p>
+
+  <a
+    href="https://www.primevideo.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn-primary">
+    Visit Prime Video →
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-links">
+
+    <a href="#setup">
+      Prime Video Setup
+    </a>
+
+    <a href="#devices">
+      Devices
+    </a>
+
+    <a href="#help">
+      Troubleshooting
+    </a>
+
+    <a href="#faq">
+      FAQ
+    </a>
+
+  </div>
+
+  <p>
+    © 2026 Prime Video Setup Guide. Independent informational website.
+  </p>
+
+  <p>
+    This website is not affiliated with, sponsored by, or endorsed by
+    Prime Video or Amazon.
+  </p>
+
+</footer>
+
+</body>
+</html>
